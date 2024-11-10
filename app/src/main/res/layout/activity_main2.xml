@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#169F84"
+        android:fontFamily="@font/alata"
+        android:gravity="bottom|right"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#0A4338"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="9"
+        android:text="Add Task"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlCompat" />
+
+
+    <ImageView
+        android:id="@+id/viewTaskBtn"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/baseline_chevron_right_24" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="301dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border_background"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:hint="Add title"
+            android:inputType="text"
+            android:textColor="#C1024E47"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="301dp"
+            android:layout_height="103dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_background"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:hint="Add description"
+            android:inputType="text"
+            android:textColor="#C1024E47"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border_background"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:text="Pick Date"
+            android:textAllCaps="false"
+            android:textColor="#E1FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/timeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@drawable/border_background"
+            android:ems="10"
+            android:fallbackLineSpacing="false"
+            android:fontFamily="@font/alata"
+            android:hapticFeedbackEnabled="false"
+            android:text="Pick Time"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/AddTaskBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="#169F84"
+            android:fontFamily="@font/alata"
+            android:text="ADD TASK"
+            android:textColor="#FAF7F7" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
